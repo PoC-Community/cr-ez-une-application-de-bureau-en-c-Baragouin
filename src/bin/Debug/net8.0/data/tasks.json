@@ -1,12 +1,10 @@
 [
   {
-    "Id": "88fb475a-e323-4af1-9ee5-2217319005fd",
     "Title": "Test Task",
     "IsCompleted": true,
     "Tags": []
   },
   {
-    "Id": "a8cd90b6-b2d9-4a9e-9178-39abb20aa98e",
     "Title": "Task 1",
     "IsCompleted": false,
     "Tags": [
@@ -15,7 +13,6 @@
     ]
   },
   {
-    "Id": "155cffbf-9bf8-45c6-9ff7-1c27aa2b55ee",
     "Title": "Task 2",
     "IsCompleted": false,
     "Tags": [
