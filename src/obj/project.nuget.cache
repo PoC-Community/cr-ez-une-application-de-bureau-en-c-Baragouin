@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sczWvdrDgmc=",
+  "dgSpecHash": "q3wip6/Sizs=",
   "success": true,
   "projectFilePath": "/home/baragouin/Documents/delivery/poc/workshops/csharp-application/src/TodoListApp.csproj",
   "expectedPackageFiles": [
@@ -19,11 +19,13 @@
     "/home/baragouin/.nuget/packages/avalonia.themes.simple/11.3.4/avalonia.themes.simple.11.3.4.nupkg.sha512",
     "/home/baragouin/.nuget/packages/avalonia.win32/11.3.4/avalonia.win32.11.3.4.nupkg.sha512",
     "/home/baragouin/.nuget/packages/avalonia.x11/11.3.4/avalonia.x11.11.3.4.nupkg.sha512",
+    "/home/baragouin/.nuget/packages/dialoghost.avalonia/0.8.1/dialoghost.avalonia.0.8.1.nupkg.sha512",
     "/home/baragouin/.nuget/packages/harfbuzzsharp/8.3.1.1/harfbuzzsharp.8.3.1.1.nupkg.sha512",
     "/home/baragouin/.nuget/packages/harfbuzzsharp.nativeassets.linux/8.3.1.1/harfbuzzsharp.nativeassets.linux.8.3.1.1.nupkg.sha512",
     "/home/baragouin/.nuget/packages/harfbuzzsharp.nativeassets.macos/8.3.1.1/harfbuzzsharp.nativeassets.macos.8.3.1.1.nupkg.sha512",
     "/home/baragouin/.nuget/packages/harfbuzzsharp.nativeassets.webassembly/8.3.1.1/harfbuzzsharp.nativeassets.webassembly.8.3.1.1.nupkg.sha512",
     "/home/baragouin/.nuget/packages/harfbuzzsharp.nativeassets.win32/8.3.1.1/harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512",
+    "/home/baragouin/.nuget/packages/messagebox.avalonia/3.3.0/messagebox.avalonia.3.3.0.nupkg.sha512",
     "/home/baragouin/.nuget/packages/microcom.runtime/0.11.0/microcom.runtime.0.11.0.nupkg.sha512",
     "/home/baragouin/.nuget/packages/skiasharp/2.88.9/skiasharp.2.88.9.nupkg.sha512",
     "/home/baragouin/.nuget/packages/skiasharp.nativeassets.linux/2.88.9/skiasharp.nativeassets.linux.2.88.9.nupkg.sha512",
