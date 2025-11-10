@@ -5,6 +5,7 @@ using Avalonia.Interactivity;
 using MsBox.Avalonia;
 using System.Collections.ObjectModel;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using TodoListApp.Models;
 
@@ -24,6 +25,8 @@ public partial class MainWindow : Window
         AddButton.Click += OnAddClick;
         DeleteButton.Click += OnDeleteClick;
         SaveButton.Click += OnSaveClick;
+        TagFilter.TextChanged += OnTagFilterChanged;
+        ClearFilterButton.Click += OnClearFilterClick;
 
         if (!Directory.Exists(_dataDirectoryPath))
             Directory.CreateDirectory(_dataDirectoryPath);
@@ -35,8 +38,13 @@ public partial class MainWindow : Window
     {
         if (!string.IsNullOrWhiteSpace(TaskInput.Text))
         {
-            _tasks.Add(new TaskItem { Title = TaskInput.Text });
+            var tags = TagsInput.Text is { Length: > 0 } text
+                ? text.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList()
+                : [];
+
+            _tasks.Add(new TaskItem { Title = TaskInput.Text, Tags = tags });
             TaskInput.Text = string.Empty;
+            TagsInput.Text = string.Empty;
         }
     }
 
@@ -68,6 +76,25 @@ public partial class MainWindow : Window
 
             await errorBox.ShowAsync();
         }
+    }
+
+    private void OnTagFilterChanged(object? sender, RoutedEventArgs e)
+    {
+        var filteredTasks = _tasks;
+
+        if (!string.IsNullOrWhiteSpace(TagFilter.Text))
+        {
+            filteredTasks =
+                new ObservableCollection<TaskItem>(_tasks
+                    .Where(task => task.Tags.Any(tag => tag.Contains(TagFilter.Text))));
+        }
+
+        TaskList.ItemsSource = filteredTasks;
+    }
+
+    private void OnClearFilterClick(object? sender, RoutedEventArgs e)
+    {
+        TagFilter.Clear();
     }
 
     private void LoadTasks()
