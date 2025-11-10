@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/milok/C--workshop-template/src/TodoListApp.csproj": {}
+    "/home/baragouin/Documents/delivery/poc/workshops/csharp-application/src/TodoListApp.csproj": {}
   },
   "projects": {
-    "/home/milok/C--workshop-template/src/TodoListApp.csproj": {
+    "/home/baragouin/Documents/delivery/poc/workshops/csharp-application/src/TodoListApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/milok/C--workshop-template/src/TodoListApp.csproj",
+        "projectUniqueName": "/home/baragouin/Documents/delivery/poc/workshops/csharp-application/src/TodoListApp.csproj",
         "projectName": "TodoListApp",
-        "projectPath": "/home/milok/C--workshop-template/src/TodoListApp.csproj",
-        "packagesPath": "/home/milok/.nuget/packages/",
-        "outputPath": "/home/milok/C--workshop-template/src/obj/",
+        "projectPath": "/home/baragouin/Documents/delivery/poc/workshops/csharp-application/src/TodoListApp.csproj",
+        "packagesPath": "/home/baragouin/.nuget/packages/",
+        "outputPath": "/home/baragouin/Documents/delivery/poc/workshops/csharp-application/src/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/milok/.nuget/NuGet/NuGet.Config"
+          "/home/baragouin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
